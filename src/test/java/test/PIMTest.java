@@ -33,9 +33,20 @@ public class PIMTest extends CommonTest {
 		System.out.println("M2");
 	}
 	
-	
+	@Test
 	public void m3() {
 		System.out.println("M3");
 	}
+
+	@Test
+	public void m4() {
+		System.out.println("M4");
+	}
+	
+	@Test
+	public void m5() {
+		System.out.println("M5");
+	}
+	
 	
 }
