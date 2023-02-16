@@ -3,18 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="test2.LoginTest2">
+      <class name="test.PIMTest">
         <methods>
-          <include name="tearDownEnvironment"/>
-          <include name="initBrowser"/>
-          <include name="verifyTitleofPage"/>
-          <include name="verifyLoginWithCorrectCredentials"/>
           <include name="logOut"/>
-          <include name="verifyCurrentUrlofPage"/>
+          <include name="login"/>
+          <include name="tearDownEnvironment"/>
+          <include name="verifyEmpSearchEmpName"/>
           <include name="pageObjects"/>
-          <include name="verifyTitleOfBuild"/>
+          <include name="initBrowser"/>
         </methods>
-      </class> <!-- test2.LoginTest2 -->
+      </class> <!-- test.PIMTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

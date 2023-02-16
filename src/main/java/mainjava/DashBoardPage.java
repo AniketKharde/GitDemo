@@ -13,6 +13,12 @@ public class DashBoardPage extends BaseClass{
 	@FindBy(xpath = "//h6[text()='Dashboard']")
 	WebElement txtDashboard;
 	
+	@FindBy(css = ".oxd-icon.bi-caret-down-fill.oxd-userdropdown-icon")
+	WebElement logoutDropDownClick;
+	
+	@FindBy(xpath = "//a[text()='Logout']")
+	WebElement logoutButtonClick;
+	
 	
 	
 	
@@ -29,7 +35,11 @@ public class DashBoardPage extends BaseClass{
 	
 	// Methods required to perform test steps //
   public String getDashBoardPageTitle() {
-	return txtDashboard.getText();
-	  
+	return txtDashboard.getText();	  
+  }
+  
+  public void clickLogoutButton() {
+	  logoutDropDownClick.click();
+	  logoutButtonClick.click();
   }
 }
