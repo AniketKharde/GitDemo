@@ -24,6 +24,8 @@ public class PIMTest extends CommonTest {
 	@Test(priority=6,groups= {"Smoke","Regression"})
 	public void verifyEmpStatus() {
 		Assert.assertEquals(true,true);
+		System.out.println("123");
+		System.out.println("123");
 	}
 	
 }
