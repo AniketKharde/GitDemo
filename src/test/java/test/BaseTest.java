@@ -14,6 +14,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.BeforeTest;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import mainjava.BaseClass;
@@ -41,7 +42,7 @@ public class BaseTest extends BaseClass{
 	}
 	@BeforeSuite
 	public void initBrowser(){
-		browserName("edge");
+		browserName("chrome");
 		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
